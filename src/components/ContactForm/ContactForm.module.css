@@ -1,0 +1,42 @@
+.form {
+  max-width: 300px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form:last-child {
+  margin-bottom: 30px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.error {
+  font-size: 12px;
+  color: orangered;
+  font-weight: 500;
+}
+
+.button {
+  min-width: 110px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 5px;
+
+  padding: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #ffff;
+  background-color: #3d3c3c;
+}

@@ -1,0 +1,22 @@
+.contactCard {
+  display: flex;
+  border: 2px solid black;
+  gap: 15px;
+  margin-bottom: 10px;
+  min-width: 480px;
+  align-items: center;
+  justify-content: space-between;
+}
+.contactInfo {
+  display: block;
+}
+
+.btnDelete {
+  height: 40px;
+  margin: auto 15px;
+}
+
+.btnDelete:hover {
+  color: #ffff;
+  background-color: #3d3c3c;
+}
