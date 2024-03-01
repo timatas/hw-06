@@ -1,21 +1,22 @@
-const filtersInitialState = {
-  name: "",
-};
-export const filtersReducer = (state = filtersInitialState, action) => {
-  switch (action.type) {
-    case "filters/changeFilter":
-      return {
-        ...state,
-        filter: action.payload,
-      };
-    default:
-      return state;
-  }
-};
+import { createSlice } from "@reduxjs/toolkit";
 
-export const changeFilter = (newFilter) => {
-  return {
-    type: "filters/changeFilter",
-    payload: newFilter,
-  };
-};
+const filtersSlice = createSlice({
+  name: "filters",
+  initialState: {
+    name: "",
+  },
+  reducers: {
+    newSearch: (state, action) => {
+      state.name = action.payload;
+    },
+  },
+});
+
+export const { newSearch } = filtersSlice.actions;
+export const filtersReducer = filtersSlice.reducer;
+
+//  export const fitersReducer = createReducer(filtersInitialState, (builder) => {
+//   builder.addCase(newSearch, (state, action) => {
+//     state.name = action.payload;
+//   });
+// });
