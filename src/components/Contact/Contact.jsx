@@ -15,7 +15,7 @@ export const Contact = ({ item }) => {
           </p>
           <p>
             <BsFillTelephoneFill />
-            {item.number}
+            {item.phone}
           </p>
         </div>
         <button
