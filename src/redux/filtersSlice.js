@@ -15,8 +15,17 @@ const filtersSlice = createSlice({
 export const { newSearch } = filtersSlice.actions;
 export const filtersReducer = filtersSlice.reducer;
 
-//  export const fitersReducer = createReducer(filtersInitialState, (builder) => {
-//   builder.addCase(newSearch, (state, action) => {
-//     state.name = action.payload;
-//   });
-// });
+//  extraReducers: (builder) =>
+//     builder
+//       .addCase(changeFilter.pending, (state) => {
+//         state.loading = true;
+//         state.error = false;
+//       })
+//       .addCase(changeFilter.fulfilled, (state, action) => {
+//         state.loading = false;
+//         state.name = action.payload;
+//       })
+//       .addCase(changeFilter.rejected, (state) => {
+//         state.loading = false;
+//         state.error = true;
+//       }),
